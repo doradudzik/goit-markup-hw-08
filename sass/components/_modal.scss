@@ -1,4 +1,4 @@
-/* Style podstawowe/ TABLET */
+/* MMOBILE PHONE/ TABLET */
 .backdrop {
   position: fixed;
   left: 0;
@@ -202,6 +202,7 @@
     border: none;
   }
 }
+
 // ===========DESKTOP====================
 @media screen and (min-width: 1200px) {
   .modal {
@@ -232,6 +233,70 @@
     &__input-textarea::placeholder {
       font-size: 12px;
       line-height: 1.16;
+    }
+  }
+}
+// =========Devices with max-width:480px
+@media screen and(max-width:480px) {
+  .modal {
+    min-width: 310px;
+    max-width: 100%;
+    display: flex;
+    &__fieldset {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    &__fieldset {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    &__legend {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    &__fieldset-secondary {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 29px;
+      left: 12px;
+    }
+
+    &__fieldset-secondary {
+      border: 0;
+      position: relative;
+    }
+    &__input {
+      width: 100%;
+    }
+
+    &__input-textarea {
+      width: 100%;
+    }
+  }
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    &__icon {
+      top: 22px;
+      left: 10px;
     }
   }
 }
