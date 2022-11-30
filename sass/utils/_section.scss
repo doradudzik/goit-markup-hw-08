@@ -1,0 +1,21 @@
+/* Style podstawowe */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--more-on-top {
+    padding-top: 139.938px;
+  }
+}
+// =======DESKTOP
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--more-on-top {
+      padding-top: 173.938px;
+      padding-bottom: 94px;
+    }
+  }
+}

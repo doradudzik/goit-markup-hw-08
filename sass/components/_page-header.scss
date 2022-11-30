@@ -1,0 +1,27 @@
+// ============HEADER- SEKCJA===================
+/* Style podstawowe */
+.header {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.19;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--dark {
+    border-bottom: 1px solid #000000;
+  }
+
+  &--light {
+    border-bottom: 1px solid #ececec;
+  }
+}

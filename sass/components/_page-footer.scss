@@ -1,0 +1,234 @@
+/* Style podstawowe */
+.footer {
+  background-color: var(--brand-color-2);
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 60px;
+    text-align: center;
+  }
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+  }
+}
+.contact-list-footer {
+  &__link {
+    margin: 9px 0;
+    display: flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    fill: #757575;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+  }
+  &__link--underline {
+    text-decoration: underline;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--brand-color);
+    fill: #2196f3;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #ffffff;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    background: #2196f3;
+    cursor: pointer;
+  }
+}
+
+// =========================NEWSLETTER SUBSCRIPTION============================
+
+.form-footer {
+  flex-direction: column;
+  justify-content: center;
+}
+.fieldset-footer {
+  border: 0;
+  display: flex;
+  margin-top: 60px;
+  // mobile:
+  flex-direction: column;
+  justify-content: center;
+  & ::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__legend {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    // mobile:
+    text-align: center;
+  }
+  &__label {
+    display: flex;
+    justify-content: center;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--brand-color-2);
+    color: #ffffff;
+    outline: 0;
+    margin-top: 20px;
+    padding-left: 16px;
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    width: 200px;
+    height: 50px;
+
+    padding-right: 76px;
+    padding-right: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    // mobile
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &__btn .fieldset-footer__btn-icon {
+    fill: #ffffff;
+    position: absolute;
+    right: 28px;
+    top: 13px;
+  }
+}
+
+// ======================================TABLET
+@media screen and (min-width: 768px) {
+  .footer {
+    &__section {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: baseline;
+    }
+    &__header {
+      margin-top: 0;
+    }
+    &__socials {
+      margin-left: 144px;
+    }
+  }
+
+  .fieldset-footer {
+    &__input {
+      width: 450px;
+      height: 50px;
+    }
+  }
+}
+
+// =====================================DEKSTOP
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+
+    & .container {
+      justify-content: flex-start;
+    }
+
+    &__section {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      justify-content: flex-start;
+      align-items: baseline;
+    }
+    &__address {
+      text-align: left;
+    }
+
+    &__header {
+      text-align: left;
+    }
+    & .container {
+      flex-direction: row;
+    }
+    &__socials {
+      margin-left: 70px;
+    }
+  }
+
+  .contact-list-footer {
+    &__link {
+      justify-content: flex-start;
+    }
+  }
+
+  .fieldset-footer {
+    margin-top: 0;
+    align-items: baseline;
+    margin-left: 78px;
+    flex-direction: row;
+
+    &__legend {
+      text-align: left;
+    }
+
+    &__input {
+      width: 358px;
+      margin-right: 12px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+/* Style podstawowe */
+.banner {
+  background-color: var(--brand-color-2);
+  display: flex;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 76.838px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero1@1x.jpg");
+
+  @media screen and(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero1@2x.jpg");
+  }
+
+  &__text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: var(--brand-color);
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 10px 41px 10px 42px;
+    border-radius: 10px;
+  }
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero2@1x.jpg");
+    @media screen and(min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero2@1x.jpg");
+    }
+
+    &__text {
+      max-width: 365px;
+    }
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero3@1x.jpg");
+    max-width: 1600px;
+    @media screen and(min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero3@2x.jpg");
+    }
+    &__text {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+  }
+}

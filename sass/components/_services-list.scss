@@ -1,0 +1,36 @@
+/* Style podstawowe */
+.services__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: #212121;
+  text-align: center;
+}
+.services-list {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+
+  &__text {
+    padding: 27px 90px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.14;
+    position: absolute;
+    top: calc(293.984px - 69.94px);
+    width: 100%;
+    color: white;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  & .services-list__card {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}

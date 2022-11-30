@@ -1,0 +1,51 @@
+// ============LISTA KONTAKTÓW===================
+/* Style podstawowe */
+.contact-list {
+  display: none;
+}
+// =================TABLET========================
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+
+    &__link {
+      text-decoration: none;
+      color: #757575;
+      fill: #757575;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link-icon {
+      margin-right: 10px;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--brand-color);
+      fill: #2196f3;
+    }
+    & li:nth-child(1) {
+      margin-left: 25px;
+    }
+  }
+}
+// ==============================DESKTOP=========================
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 0;
+    flex-grow: 1;
+
+    & [href="tel:+48111111111"] {
+      margin-left: 20px;
+    }
+  }
+}

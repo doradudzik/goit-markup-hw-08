@@ -1,0 +1,63 @@
+/* Style podstawowe */
+.customers {
+  &__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    color: #212121;
+    text-align: center;
+  }
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__icon {
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #afb1b8;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+    cursor: pointer;
+    fill: #2196f3;
+  }
+}
+// ===================TABLET
+@media screen and (min-width: 768px) {
+  .customers-list {
+    &__icon {
+      width: 226px;
+      height: 92px;
+    }
+  }
+}
+// ==================DESKTOP
+@media screen and (min-width: 1200px) {
+  .customers__header {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  .customers-list {
+    &__icon {
+      width: 170px;
+      height: 92px;
+    }
+  }
+}

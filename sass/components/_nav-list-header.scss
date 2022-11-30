@@ -1,0 +1,62 @@
+// ============Pasek nagigacji===================
+/* Style podstawowe */
+.nav-list {
+  display: none;
+}
+/* Style tabletu */
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    flex-grow: 2;
+    margin-right: 80px;
+    margin-left: 83px;
+
+    &__link {
+      color: #212121;
+      text-decoration: none;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link--site {
+      color: var(--brand-color);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--brand-color);
+      fill: #2196f3;
+    }
+
+    &__link--site {
+      position: relative;
+      width: max-content;
+      height: max-content;
+    }
+
+    &__link--site::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 53px;
+      top: 45px;
+      left: 0;
+      background: var(--brand-color);
+      border-radius: 2px;
+    }
+    & [href="./portfolio.html"] {
+      margin-left: 46px;
+      margin-right: 46px;
+    }
+  }
+}
+// =============DESKTOP==============
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    display: flex;
+    flex-grow: 2;
+    margin-right: 345px;
+    margin-left: 83px;
+  }
+}

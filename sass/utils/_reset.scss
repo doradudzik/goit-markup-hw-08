@@ -1,0 +1,19 @@
+h1,
+h2,
+h4,
+h5,
+p,
+ul,
+address,
+fieldset,
+textarea {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  resize: none;
+}
+
+%link-reset {
+  text-decoration: none;
+}

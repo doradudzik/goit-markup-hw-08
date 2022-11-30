@@ -1,0 +1,68 @@
+/* Style podstawowe */
+.description-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #757575;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 45px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 450px;
+  }
+
+  &__icon {
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  &__header {
+    font-weight: 700;
+    color: #212121;
+    text-align: center;
+  }
+}
+
+// ======== TABLET
+@media screen and (min-width: 768px) {
+  .description-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .description-list__item {
+    flex-basis: 354px;
+
+    &__text {
+      text-align: left;
+    }
+  }
+}
+// ====================DESKTOP
+@media screen and (min-width: 1200px) {
+  .description-list {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    padding: 0;
+  }
+  .description-list__item {
+    &__text {
+      text-align: left;
+    }
+  }
+}
